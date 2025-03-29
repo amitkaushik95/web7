@@ -1,0 +1,61 @@
+/* General Styles */
+body {
+    padding-top: 56px;
+}
+
+/* Carousel Styles */
+.carousel-item {
+    height: 600px;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 100%;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Plans Section */
+#plans .card {
+    transition: transform 0.3s;
+    height: 100%;
+}
+
+#plans .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#plans .card-header {
+    padding: 20px;
+}
+
+#plans .list-unstyled li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+#plans .list-unstyled li:last-child {
+    border-bottom: none;
+}
+
+/* Form Styles */
+.form-control:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .carousel-item {
+        height: 400px;
+    }
+    
+    #plans .card {
+        margin-bottom: 20px;
+    }
+} 
